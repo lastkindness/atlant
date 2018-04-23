@@ -1,6 +1,6 @@
 // libs
-@import "~bootstrap/scss/bootstrap-reboot";
-@import "~bootstrap/scss/bootstrap-grid";
+/*@import "~bootstrap/scss/bootstrap-reboot";
+@import "~bootstrap/scss/bootstrap-grid";*/
     
 // generals
 @import "generals/typo";
@@ -8,5 +8,8 @@
 @import "generals/variables";
 
 // components
+@import "components/header/header";
+@import "components/footer/footer";
+@import "components/main-info/main-info";
 
 //templates

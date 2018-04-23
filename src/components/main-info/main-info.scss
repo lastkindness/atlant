@@ -1,0 +1,23 @@
+.main-info {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  &_index {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    &_nav {
+      grid-column-start: 1;
+      grid-column-end: 4;
+      display: grid;
+      grid-template-columns: 1fr 2fr 1fr;
+      ul {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+  }
+}
