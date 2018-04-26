@@ -1,0 +1,7 @@
+mixin button(text, tag)
+    if tag === 'a'
+        a.btn&attributes(attributes)= text
+    else if tag === 'button'
+        button.btn&attributes(attributes)= text
+    else if tag === 'input'
+        input.btn(value=text)&attributes(attributes)

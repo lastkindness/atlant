@@ -1,0 +1,25 @@
+.footer {
+  background-color: $background2;
+  padding: 55px 0;
+  color: $textColor1;
+  .main-info {
+    &_index {
+      &_nav {
+        display: none;
+      }
+      &_adress {
+        color: $textColor2;
+        &::before {
+          filter: invert(100%);
+        }
+      }
+      &_tel {
+        li {
+          &::before {
+            filter: invert(100%);
+          }
+        }
+      }
+    }
+  }
+}

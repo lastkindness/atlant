@@ -1,0 +1,12 @@
+include ../../../components/button/button
+
+section.home_slider-top
+    each val in [0, 1, 2, 3]
+        .home_slider-top_slide
+            .home_slider-top_slide_content
+                .home_slider-top_slide_titles
+                    h3.home_slider-top_slide_title Продажа офисов от 20м2
+                    h4.home_slider-top_slide_title Одесса, ул. Преображенская, 43
+                .home_slider-top_slide_buttons
+                    +button('Заказать обратный звонок', 'a').btn-black.home_slider-top_slide_button(href='#')
+            img(src=require('./templates/home/home_slider-top/goose-water.jpg') alt='slider-image')

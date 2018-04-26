@@ -1,0 +1,16 @@
+.header {
+  padding: 40px 0;
+  .main-info {
+    &_index {
+      &_adress {
+        span {
+          flex-basis: 100%;
+          margin-left: 23px;
+        }
+      }
+      &_mail {
+        display: none;
+      }
+    }
+  }
+}

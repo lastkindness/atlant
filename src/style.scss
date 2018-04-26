@@ -1,6 +1,8 @@
 // libs
 /*@import "~bootstrap/scss/bootstrap-reboot";
 @import "~bootstrap/scss/bootstrap-grid";*/
+@import "~slick-carousel/slick/slick";
+
     
 // generals
 @import "generals/typo";
@@ -11,5 +13,8 @@
 @import "components/header/header";
 @import "components/footer/footer";
 @import "components/main-info/main-info";
+@import "components/button/button";
 
 //templates
+@import "templates/home/home_slider-top/home_slider-top";
+@import "templates/home/home_advantages/home_advantages";

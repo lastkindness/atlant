@@ -1,7 +1,9 @@
 import './style.scss';
 
-// import Header from './components/header';
+import MainInfo from './components/main-info/index';
+import Home from './templates/home/index';
 
 document.addEventListener('DOMContentLoaded', () => {
-//     new Header(); 
+        new MainInfo();
+        new Home();
 });

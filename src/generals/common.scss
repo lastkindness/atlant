@@ -6,11 +6,12 @@
 
 body {
    background-color: $background1;
-   /*font-family: Montserrat, sans-serif;*/
+   font-family: AvenirNextW1G, sans-serif;
    font-weight: 400;
    font-size: 14px;
    color: $textColorMain;
    line-height: 22px;
+   margin: 0;
    &.overflow {
      width: 100%;
      height: 100%;
@@ -25,9 +26,11 @@ a {
   font-weight: 500;
   text-transform: uppercase;
   text-decoration: none;
+  transition: 0.5s all;
   &:hover {
-    opacity: 0.2;
+    opacity: 0.7;
     text-decoration: none;
+    transition: 0.5s all;
   }
 }
 
@@ -35,6 +38,36 @@ ul {
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+h2 {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 100px;
+  position: relative;
+  text-align: left;
+  &:before {
+    content: '';
+    display: inline-block;
+    width: 88px;
+    height: 5px;
+    position: absolute;
+    background-color: $decorativeColorMain;
+    top: 0;
+    left: 0;
+  }
+}
+
+h3 {
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 0.12px;
+}
+
+h4 {
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 0.09px;
 }
 
 .container {
