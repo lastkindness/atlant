@@ -1,0 +1,25 @@
+.home_sale {
+  &_nav {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    height: 60px;
+    grid-column-gap: 15px;
+    &_item {
+      text-transform: uppercase;
+      font-size: 18px;
+      color: $textColor3;
+      background-color: transparent;
+      transition: 0.5s all;
+      border: 1px solid $decorativeColorMain;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      &:hover {
+        background-color: $decorativeColorMain;
+        transition: 0.5s all;
+        color: $textColor1;
+        cursor: pointer;
+      }
+    }
+  }
+}

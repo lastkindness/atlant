@@ -1,0 +1,116 @@
+.home_about {
+  margin-bottom: 80px;
+  &_wrapper {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding-bottom: 80px;
+    border-bottom: 1px solid $decorativeColor1;
+  }
+  &_item {
+    &_slider {
+      .slick-slide {
+        margin: 0 7px;
+        height: 100%;
+        & > div {
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          width: 100%;
+        }
+      }
+      img {
+        height: 100%;
+        min-height: 100%;
+        max-width: 100%;
+      }
+      .slick-track {
+        display: flex;
+        height: 100%;
+        align-items: stretch;
+      }
+      .slick-list {
+        height: 100%;
+        padding: 0 !important;
+      }
+    }
+    &_text-content {
+      padding-right: 70px;
+    }
+  }
+  &_slider-for {
+    margin-bottom: 15px;
+    .slick-slide {
+      & > div {
+        position: relative;
+        .image {
+          .count {
+            position: absolute;
+            width: 90px;
+            height: 90px;
+            bottom: 20px;
+            left: 20px;
+            background-color: $decorativeColorMain;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 36px;
+            font-weight: 700;
+            color: $textColor1;
+          }
+          img {
+            height: auto;
+          }
+        }
+      }
+    }
+    .slick-track {
+      display: flex;
+      align-items: center;
+    }
+  }
+  &_slider-nav {
+    height: 135px;
+    .slick-slide {
+      & > div {
+        position: relative;
+        .image {
+          height: 100%;
+          width: 100%;
+          .count {
+            position: absolute;
+            content: "";
+            left: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 5;
+            font-size: 24px;
+            font-weight: 700;
+            color: $textColor1;
+          }
+          &:after {
+            position: absolute;
+            content: "";
+            height: 100%;
+            width: 100%;
+            top: 0;
+            left: 0;
+            background-color: rgba(181,47,47,0.53);
+            transition: 0.5s all;
+          }
+        }
+      }
+      &:hover {
+        & > div {
+          .image {
+            &:after {
+              background-color: rgba(181,47,47,0.73);
+              transition: 0.5s all;
+              cursor: pointer;
+            }
+          }
+        }
+      }
+    }
+  }
+}

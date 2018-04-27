@@ -43,9 +43,10 @@ ul {
 h2 {
   font-size: 36px;
   font-weight: 700;
-  line-height: 100px;
+  line-height: 70px;
   position: relative;
   text-align: left;
+  margin-top: 0;
   &:before {
     content: '';
     display: inline-block;
@@ -68,6 +69,13 @@ h4 {
   font-size: 18px;
   font-weight: 400;
   letter-spacing: 0.09px;
+}
+
+p {
+  margin: 30px 0;
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .container {
