@@ -14,9 +14,12 @@
 @import "components/footer/footer";
 @import "components/main-info/main-info";
 @import "components/button/button";
+@import "components/popup/popup-modal";
+@import "components/popup/popup";
 
 //templates
 @import "templates/home/home_slider-top/home_slider-top";
 @import "templates/home/home_advantages/home_advantages";
 @import "templates/home/home_about/home_about";
 @import "templates/home/home_sale/home_sale";
+@import "templates/home/home_contacts/home_contacts";

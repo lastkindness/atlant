@@ -6,6 +6,22 @@
   }
   &_item {
     text-align: center;
+    position: relative;
+    &:after {
+      height: 80px;
+      width: 1px;
+      position: absolute;
+      content: "";
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: $decorativeColor1;
+    }
+    &:last-child {
+      &:after {
+        display: none;
+      }
+    }
   }
   &_icon {
     width: 100%;

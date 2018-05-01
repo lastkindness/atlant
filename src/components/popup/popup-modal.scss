@@ -1,0 +1,44 @@
+.popup {
+  padding: 40px 45px;
+  width: 590px;
+  background-color: $background1;
+  border: 1px solid $decorativeColorMain;
+  &_wrapper {
+    text-align: center;
+  }
+  &_form {
+    width: 100%;
+    margin-top: 30px;
+    &_input {
+      width: 100%;
+      height: 60px;
+      margin: 7px 0;
+      padding: 20px 25px;
+      font-size: 16px;
+      color: $textColor4;
+      border: 1px solid $decorativeColor1;
+      transition: 0.3s all;
+      &:focus {
+        outline-color: $decorativeColorMain;
+        transition: 0.3s all;
+      }
+    }
+  }
+  h3 {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 30px;
+    margin: 0 0 20px 0;
+  }
+  span {
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 500;
+  }
+  .btn {
+    width: auto;
+    margin-top: 20px;
+  }
+}

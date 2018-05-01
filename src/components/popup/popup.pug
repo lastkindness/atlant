@@ -1,0 +1,12 @@
+include ../../components/button/button
+
+.popup#popup_callback
+    .popup_wrapper
+        h3 Обратный звонок
+        span Хотите чтобы мы перезвонили?
+        span Оставьте свои  данные.
+        form.popup_form
+            input.popup_form_input(placeholder="Ваше имя")
+            input.popup_form_input(placeholder="Номер телефона")
+            .popup_form_input_buttons
+                +button('Заказать обратный звонок', 'a').btn-black.home_slider-top_slide_button(href='#')

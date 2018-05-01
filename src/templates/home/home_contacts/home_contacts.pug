@@ -1,0 +1,25 @@
+include ../../../components/button/button
+
+section.home_contacts
+    .container
+        h2 Контакты
+        .home_contacts_wrapper
+            .home_contacts_info
+                .home_contacts_info_item.adress
+                    h3 Адрес
+                    ul
+                        li г. Одесса, ул. Базарная, 36
+                .home_contacts_info_item.tel
+                    h3 Телефоны
+                    ul
+                        li +38 (063) 000-00-00
+                        li +38 (063) 000-00-00
+                        li +38 (063) 000-00-00
+                .home_contacts_info_item.mail
+                    h3 Email
+                    ul
+                        li sample@gmail.com
+                .home_contacts_info_buttons
+                    +button('Заказать обратный звонок', 'a').btn-black.home_slider-top_slide_button(href='#' data-popup-target='#popup_callback')
+            .home_contacts_map#location-map
+

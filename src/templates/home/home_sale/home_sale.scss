@@ -1,9 +1,15 @@
 .home_sale {
+  margin-bottom: 80px;
+  &_wrapper {
+    padding-bottom: 80px;
+    border-bottom: 1px solid $decorativeColor1;
+  }
   &_nav {
     display: grid;
-    grid-template-columns: repeat(7, 1fr);
+    grid-template-columns: repeat(8, 1fr);
     height: 60px;
     grid-column-gap: 15px;
+    margin-bottom: 40px;
     &_item {
       text-transform: uppercase;
       font-size: 18px;
@@ -14,11 +20,37 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      &.active,
       &:hover {
         background-color: $decorativeColorMain;
         transition: 0.5s all;
         color: $textColor1;
         cursor: pointer;
+      }
+    }
+  }
+  &_content {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    transition: 0.5s all;
+    &_item {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      z-index: -1;
+      top: 0;
+      left: 0;
+      opacity: 0;
+      transition: 0.5s all;
+      &.active {
+        transition: 0.5s all;
+        opacity: 1;
+      }
+      img {
+        max-width: 100%;
       }
     }
   }

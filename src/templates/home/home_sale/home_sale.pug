@@ -3,9 +3,10 @@ section.home_sale
         h2 Продажа
         .home_sale_wrapper
             .home_sale_nav
-                - for (var i = 0; i<7; i++)
+                - for (var i = 0; i<8; i++)
                     .home_sale_nav_item=(i + 1)+' этаж'
             .home_sale_content
-                each val in [1, 2, 3, 4, 5, 6, 7]
+                - for (var z = 0; z<8; z++)
+                    - console.log(z);
                     .home_sale_content_item
-                        img(src=require('./1.png') alt='slider-image')
+                        img(src=require('./' + z + '.jpg') alt='slider-image')
