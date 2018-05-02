@@ -1,0 +1,16 @@
+include ../../components/button/button
+
+.popup#popup_sale
+    .popup_wrapper
+        h3 Офис #1
+        span.area 52 м²
+        span.price 6000 грн
+        img(src=require('./templates/home/home_sale/img/1/1.png') alt='slider-image')
+        form.popup_form
+            h4 Хотите приобрести офис?
+            input.popup_form_input(placeholder="Ваше имя")
+            input.popup_form_input(placeholder="Номер телефона")
+            textarea.popup_form_textarea(placeholder="Ваш комментарий")
+            .popup_form_input_buttons
+                +button('Заказать обратный звонок', 'a').btn-black.home_slider-top_slide_button(href='#')
+    .popup_close(data-popup-close="all")

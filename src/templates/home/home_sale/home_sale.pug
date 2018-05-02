@@ -3,10 +3,15 @@ section.home_sale
         h2 Продажа
         .home_sale_wrapper
             .home_sale_nav
-                - for (var i = 0; i<8; i++)
+                - for (let i = 0; i<8; i++)
                     .home_sale_nav_item=(i + 1)+' этаж'
             .home_sale_content
-                - for (var z = 0; z<8; z++)
-                    - console.log(z);
+                - const points = require('./points')
+                - for (let z = 0; z<8; z++)
                     .home_sale_content_item
                         img(src=require('./' + z + '.jpg') alt='slider-image')
+                        - for ( let i = 0; i < points['default'][z].length; i++)
+                            .home_sale_content_item_point(data-popup-target='#popup_sale' style='top:' + points['default'][z][i].top + 'px' + ';' + 'left:'
+                            + points['default'][z][i].left + 'px' + ';')
+
+

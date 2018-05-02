@@ -9,7 +9,8 @@
   &_form {
     width: 100%;
     margin-top: 30px;
-    &_input {
+    &_input,
+    &_textarea {
       width: 100%;
       height: 60px;
       margin: 7px 0;
@@ -22,6 +23,10 @@
         outline-color: $decorativeColorMain;
         transition: 0.3s all;
       }
+    }
+    &_textarea {
+      height: 135px;
+      resize: none;
     }
   }
   h3 {
@@ -40,5 +45,67 @@
   .btn {
     width: auto;
     margin-top: 20px;
+  }
+}
+
+#popup_sale {
+  width: 1375px;
+  .popup_wrapper {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-rows: 65px auto;
+    grid-column-gap: 20px;
+    justify-items: center;
+  }
+  img {
+    max-width: 100%;
+    width: auto;
+    height: 100%;
+  }
+  h3 {
+    text-align: center;
+    margin: 0;
+    align-items: center;
+    display: flex;
+  }
+  span {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .popup_form {
+    margin: 0;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    padding: 35px 45px;
+    border: 1px solid $decorativeColorMain;
+  }
+  .price {
+    background-color: $background2;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 500;
+    color: $textColor1;
+  }
+  .popup_close {
+    width: 28px;
+    height: 28px;
+    position: absolute;
+    top: 20px;
+    right: 12px;
+    &:before,
+    &:after {
+      position: absolute;
+      content: '';
+      display: inline-block;
+      width: 100%;
+      height: 3px;
+      background-color: $decorativeColor1;
+      transform: rotate(45deg);
+    }
+    &:before {
+      transform: rotate(-45deg);
+    }
   }
 }
