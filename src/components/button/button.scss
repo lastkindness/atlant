@@ -1,3 +1,10 @@
+.home_slider-top_slide_buttons {
+  &:focus {
+    outline-color: $decorativeColor1;
+    transition: 0.3s all;
+  }
+}
+
 .btn {
   padding: 20px 35px;
   background-color: $decorativeColorMain;
@@ -7,4 +14,23 @@
   display: inline-block;
   width: 100%;
   text-align: center;
+  transition: 0.3s all;
+  &:focus {
+    outline-color: $decorativeColor1;
+    transition: 0.3s all;
+  }
+}
+
+@media (max-width: 800px) {
+  .btn {
+    padding: 15px 25px;
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 500px) {
+  .btn {
+    padding: 10px 20px;
+    font-size: 12px;
+  }
 }

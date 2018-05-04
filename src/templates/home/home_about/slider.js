@@ -21,7 +21,15 @@ export default class {
                 arrows: false,
                 dots: false,
                 centerMode: true,
-                focusOnSelect: true
+                focusOnSelect: true,
+                responsive: [
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            slidesToShow: 2
+                        }
+                    }
+                ]
             });
         }
     }

@@ -51,9 +51,17 @@
       text-align: right;
     }
     &_logo {
-      font-size: 48px;
+      font-size: 30px;
       font-weight: 700;
-      letter-spacing: 1.2px;
+      letter-spacing: 0.75px;
+      color: $textColor3;
+      span {
+        display: inline-block;
+        width: 100%;
+        font-size: 36px;
+        letter-spacing: 0.9px;
+        margin-top: 10px;
+      }
     }
     &_nav {
       font-size: 16px;
@@ -87,7 +95,7 @@
       li {
         display: flex;
         align-items: center;
-        margin-bottom: 20px;
+        margin-bottom: 10px;
         justify-content: flex-end;
         &::before {
           content: "";
@@ -114,5 +122,112 @@
         margin-right: 8px;
       }
     }
+  }
+}
+
+@media (max-width: 850px) {
+  .main-info {
+    &_index {
+      &_nav {
+        ul {
+          grid-column-start: 1;
+          grid-column-end: 4;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .main-info {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    &_index {
+      &_nav {
+        grid-column-end: 5;
+      }
+      &:nth-child(2) {
+        grid-column-start: 1;
+        grid-column-end: 5;
+        grid-row-start: 1;
+        grid-row-end: 2;
+      }
+      &:nth-child(1) {
+        grid-column-start: 1;
+        grid-column-end: 3;
+      }
+      &:nth-child(3) {
+        grid-column-start: 3;
+        grid-column-end: 5;
+      }
+      &_logo {
+        font-size: 40px;
+        span {
+          margin-top: 15px;
+          font-size: 45px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .main-info {
+    &_index {
+      &_logo {
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .main-info {
+    &_index {
+      &:nth-child(3),
+      &:nth-child(1) {
+        grid-column-start: 1;
+        grid-column-end: 5;
+      }
+      &_tel {
+        li {
+          justify-content: center;
+        }
+      }
+      &_adress {
+        justify-content: center;
+        margin-bottom: 0;
+        span {
+          text-align: center;
+        }
+      }
+      &_nav {
+        a {
+          font-size: 14px;
+        }
+      }
+      &_logo {
+        font-size: 30px;
+        span {
+          margin-top: 15px;
+          font-size: 35px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .main-info {
+   &_index {
+    &_nav {
+      ul {
+        li {
+          &:nth-child(3) {
+            display: none;
+          }
+        }
+      }
+    }
+   }
   }
 }

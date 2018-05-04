@@ -46,3 +46,49 @@
     }
   }
 }
+
+@media (max-width: 1200px) {
+  .home{
+   &_slider-top {
+    &_slide {
+      img {
+        width: 100%;
+      }
+      &_content {
+        height: 80%;
+      }
+    }
+   }
+  }
+}
+
+@media (max-width: 800px) {
+  .home{
+    &_slider-top {
+      margin-bottom: 30px;
+      &_slide {
+        &_title {
+          &:last-child {
+            padding: 15px 30px;
+          }
+          padding: 15px 30px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .home{
+    &_slider-top {
+      &_slide {
+        &_title {
+          &:last-child {
+            padding: 10px 15px;
+          }
+          padding: 10px 15px;
+        }
+      }
+    }
+  }
+}

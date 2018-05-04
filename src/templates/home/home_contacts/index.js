@@ -14,8 +14,8 @@ export default class {
 
             function initMap() {
                 const pos = {
-                    lat: 46.476965,
-                    lng: 30.731280
+                    lat: 46.474834,
+                    lng: 30.741072
                 };
                 const map = new google.maps.Map(mapEl, {
                     zoom: 16,

@@ -109,7 +109,13 @@ class Popup {
         const { popups } = this;
 
         //Закрытие всех попапов в списке, кроме переданного в скопе
-        Array.prototype.forEach.call( popups, popup => { if (popup !== exeptPopup) popup.close(false) } )
+        Array.prototype.forEach.call( popups, popup => {
+            if (exeptPopup) {
+                if (popup.element !== exeptPopup.element) popup.close(false)
+            } else {
+                popup.close()
+            }
+        })
 
     }
 

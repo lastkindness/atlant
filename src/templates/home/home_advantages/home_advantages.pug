@@ -1,8 +1,8 @@
 section.home_advantages
     .container
         .home_advantages_wrapper
-            -var title = ["5 минут до вокзала", "Хорошая транспортная развязка", "Центр города", "5 минут до вокзала", "5 минут до вокзала"]
+            -var title = ["Центр города", "Хорошая транспортная развязка", "Подземная парковка", "Офисы различных размеров и планировок", "Наличие охраны"]
             -for(var i = 0; i < title.length; i++)
                 .home_advantages_item
-                    .home_advantages_icon(style='background-image: url(' + require('./icon' + i + '.png') + ')')
+                    .home_advantages_icon(style='background-image: url(' + require('./icon' + i + '.svg') + ')')
                     .home_advantages_title= title[i]

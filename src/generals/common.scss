@@ -29,10 +29,17 @@ a {
   text-transform: uppercase;
   text-decoration: none;
   transition: 0.5s all;
+  border: none;
+  outline-color: $decorativeColor1;
   &:hover {
     opacity: 0.7;
     text-decoration: none;
     transition: 0.5s all;
+  }
+  &:focus {
+    outline-color: $decorativeColor1;
+    transition: 0.3s all;
+    border: none;
   }
 }
 
@@ -83,4 +90,38 @@ p {
 .container {
   width: 1200px;
   margin: 0 auto;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    width: 95%;
+  }
+}
+
+@media (max-width: 800px) {
+  h3 {
+    font-size: 20px;
+  }
+
+  h4 {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 500px) {
+  h2 {
+    font-size: 30px;
+    line-height: 50px;
+    margin-bottom: 0;
+  }
+  h3 {
+    font-size: 16px;
+  }
+
+  h4 {
+    font-size: 12px;
+  }
+  p {
+    text-align: justify;
+  }
 }

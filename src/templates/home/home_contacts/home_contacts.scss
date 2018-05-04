@@ -65,3 +65,50 @@
     font-size: 15px;
   }
 }
+
+@media (max-width: 800px) {
+  .home {
+    &_contacts {
+      margin-bottom: 0;
+      &_wrapper {
+        grid-template-columns: 100%;
+      }
+      &_info,
+      &_map {
+        grid-column-start: 1;
+        grid-column-end: 2;
+      }
+      &_map {
+        height: 80vh;
+      }
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .home {
+    &_contacts {
+      &_map {
+        height: 60vh;
+        & > div {
+          padding: 0;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .home {
+    &_contacts {
+      &_info {
+        padding: 20px;
+        &_item {
+          ul {
+            font-size: 15px;
+          }
+        }
+      }
+    }
+  }
+}
