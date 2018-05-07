@@ -11,8 +11,8 @@ export default class {
     init () {
         let {data, form, elements } = this;
 
-        console.log(this.data)
-        console.log(elements)
+        // console.log(this.data)
+        // console.log(elements)
 
         elements.forEach( element => {
             element.addEventListener('click', this.render.bind(this, element))
@@ -34,7 +34,7 @@ export default class {
         const img = form.querySelector('img');
 
         const imgSrc = require('./img/' + (+tab + 1) + '/' + (+item + 1) + '.png' );
-        console.log(imgSrc);
+        // console.log(imgSrc);
 
         title.innerHTML = myData.title;
         area.innerHTML = myData.area + ' м²';

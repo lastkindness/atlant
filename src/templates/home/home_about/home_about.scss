@@ -44,6 +44,8 @@
       & > div {
         position: relative;
         .image {
+          display: flex;
+          justify-content: center;
           .count {
             position: absolute;
             width: 90px;
@@ -75,8 +77,11 @@
       & > div {
         position: relative;
         .image {
-          height: 100%;
+          height: auto;
           width: 100%;
+          display: flex !important;
+          justify-content: center;
+          align-items: center;
           .count {
             position: absolute;
             content: "";
@@ -87,6 +92,11 @@
             font-size: 24px;
             font-weight: 700;
             color: $textColor1;
+          }
+          img {
+            height: 100%;
+            width: 100%;
+            min-height: 100%;
           }
           &:after {
             position: absolute;
